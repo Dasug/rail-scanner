@@ -9,6 +9,7 @@ package de.dasug.minecraft.railscanner.blocks;
 
 import de.dasug.minecraft.railscanner.RailScanner;
 import de.dasug.minecraft.railscanner.tiles.TileEntityRailScanner;
+import de.dasug.minecraft.util.MiscTools;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -54,7 +55,7 @@ public class BlockRailScanner extends BlockContainer {
     public void onBlockPlacedBy(World world, int i, int j, int k, EntityLivingBase entityliving, ItemStack stack) {
         TileEntity tile = world.getTileEntity(i, j, k);
         if (tile instanceof TileEntityRailScanner) {
-            ((TileEntityRailScanner) tile).setDirection(ForgeDirection.UP/*MiscTools.getSideClosestToPlayer(world, i, j, k, entityliving)*/);
+            ((TileEntityRailScanner) tile).setDirection(MiscTools.getSideClosestToPlayer(world, i, j, k, entityliving));
             ((TileEntityRailScanner) tile).onBlockPlacedBy(entityliving, stack);
         }
     }
