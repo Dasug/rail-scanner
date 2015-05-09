@@ -1,0 +1,18 @@
+[
+{
+  "modid": "railscanner",
+  "name": "Rail Scanner",
+  "description": "Getting your Minecart Data to Computercraft",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/Dasug/rail-scanner",
+  "updateUrl": "",
+  "authorList": ["Dasug"],
+  "credits": "Created by Dasug",
+  "logoFile": "",
+  "screenshots": [],
+  "requiredMods": [],
+  "dependencies": ["Railcraft", "ComputerCraft"],
+  "useDependencyInformation": true
+}
+]
